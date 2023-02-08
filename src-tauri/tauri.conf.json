@@ -7,7 +7,7 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "NEAV1E Rust",
+    "productName": "neav1e rust",
     "version": "1.0.0"
   },
   "tauri": {
@@ -34,7 +34,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.jordonbc.NEAV1ERust.dev",
+      "identifier": "com.jordonbc.neav1e.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
