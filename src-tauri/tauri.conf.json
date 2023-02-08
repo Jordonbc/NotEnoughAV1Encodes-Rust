@@ -34,7 +34,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.jordonbc.NEAV1E_Rust.dev",
+      "identifier": "com.jordonbc.NEAV1ERust.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
