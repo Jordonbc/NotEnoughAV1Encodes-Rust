@@ -10,14 +10,123 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a id="selected" href="#">Home</a>
-      </nav>
-    </header>
+    <div id="top-buttons">
+      <div id="top-buttons-left">
+        <button class="image-button" type="button" id="Button-Open-Source" OnClick="ButtonOpenSource_Click">
+          <p id="LabelSource" style="font-size: 14;">
+            <img src="assets/video.png"/>
+            Source
+          </p>
+        </button>
+        <button class="image-button" type="button" id="Button-Set-Destination" OnClick="ButtonOpenSource_Click">
+          <p id="LabelDestination" style="font-size: 14; padding: 0px;">
+            <img src="assets/save.png"/>
+            Destination
+          </p>
+        </button>
+        <button class="image-button" type="button" id="Button-Add-To-Queue" OnClick="ButtonOpenSource_Click">
+          <p id="LabelAddToQueue" style="font-size: 14; padding: 0px;">
+            <img src="assets/queue.png"/>
+            Add to Queue
+          </p>
+        </button>
+      </div>
+      <div id="top-buttons-right">
+        <button class="image-button" type="button" id="Button-Start-Stop" OnClick="ButtonOpenSource_Click">
+          <p id="LabelStartPauseButton" style="font-size: 14; padding: 0px;">
+            <img src="assets/start.png"/>
+            Start
+          </p>
+        </button>
+        <button class="image-button" type="button" id="button-Cancel-Encode" OnClick="ButtonOpenSource_Click">
+          <p id="LabelCancel" style="font-size: 14; padding: 0px;">
+            <img src="assets/stop.png"/>
+            Cancel
+          </p>
+        </button>
+        <button class="image-button" type="button" id="button-Cancel-Encode" OnClick="ButtonOpenSource_Click">
+          <p id="ImageStartStop1" style="font-size: 14; padding: 0px; margin: 0px;">
+            <img src="assets/settings.png"/>
+          </p>
+        </button>
+      </div>
+      
+  </div>
+    <nav>
+      <ul>
+        <li><a id="selected" href="summary.html">Summary</a></li>
+        <li><a href="filters.html">Filters</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="subtitles.html">Subtitles</a></li>
+        <li><a href="queue.html">Queue</a></li>
+      </ul>
+    </nav>
 
-    <div class="actually_centered">
-      <p>Hello, World!</p>
+    <div id="categories">
+      <div id="input-output" class="category">
+        <div class="category-title">
+          <h1 style="margin: 0px;">Input / Output</h1>
+        </div>
+        <div class="category-content">
+          <div><p>Source: </p><p>No Source Selected</p></div>
+          <div><p>Destination: </p><p>No Destination Selected</p></div>
+        </div>
+      </div>
+  
+      <div id="input-output" class="category">
+        <div class="category-title">
+          <h1 style="margin: 0px;">Video Information</h1>
+        </div>
+        <div class="category-content">
+          <p>Length: </p>
+          <p>Color Format: </p>
+          <p>Framerate: </p>
+          <p>Resolution: </p>
+        </div>
+      </div>
+  
+      <div id="input-output" class="category">
+        <div class="category-title">
+          <h1 style="margin: 0px;">Current Encoder Settings</h1>
+        </div>
+        <div class="category-content">
+          <p>Encoder: </p>
+          <p>Color Format: </p>
+          <p>Framerate: </p>
+          <p>Bit-Depth: </p>
+        </div>
+      </div>
+  
+      <div id="input-output" class="category">
+        <div class="category-title">
+          <h1 style="margin: 0px;">Presets</h1>
+        </div>
+        <div class="category-content">
+          <p style="display: inline;">Preset: </p>
+          <button type="button" id="button-save-preset">
+            <p style="display: inline;" id="LabelSource" style="font-size: 14; padding: 0px;">Save</p>
+          </button>
+          <button type="button" id="button-delete-preset">
+            <p id="LabelSource" style="font-size: 14; padding: 0px;">Delete</p>
+          </button>
+          <button type="button" id="button-set-preset-as-default">
+            <p id="LabelSource" style="font-size: 14; padding: 0px;">Set as Default</p>
+          </button>
+        </div>
+      </div>
+  
+      <div id="input-output" class="category">
+        <div class="category-title">
+          <h1 style="margin: 0px;">Workers and Splitting</h1>
+        </div>
+        <div class="category-content">
+          <p>Worker Count: </p>
+          <p>Splitting Method: </p>
+          <p>Reencode Method: </p>
+          <p>Chunk Length (seconds): </p>
+        </div>
+        
+      </div>
     </div>
     
   </body>
